@@ -57,4 +57,41 @@ $(document).ready(function() {
         $(this).addClass('current');
         $('.js-val-cur').text($(this).attr('data-value'));
     });
+
+    $('.iswifi').change(function(){
+        if($(this).prop('checked')) {
+            $('.js-scheme-img').css('visibility', 'hidden');
+            $('.js-scheme-img2').css('visibility', 'visible');
+        }
+        else {
+            $('.js-scheme-img').css('visibility', 'visible');
+            $('.js-scheme-img2').css('visibility', 'hidden');
+        }
+        $('.js-iswifi-change').each(function(){
+            if($('.iswifi').prop('checked')) {
+                $(this).text($(this).attr('data-ifis'));
+            }
+            else {
+                $(this).text($(this).attr('data-ifnone'));
+            }
+        });
+    });
+    $('.isexit').change(function(){
+        $('.js-isexit-change-img').each(function(){
+            if($('.isexit').prop('checked')) {
+                $(this).find('img').attr('src', $(this).attr('data-ifis'));
+            }
+            else {
+                $(this).find('img').attr('src', $(this).attr('data-ifnone'));
+            }
+        });
+        $('.js-isexit-change-txt').each(function(){
+            if($('.isexit').prop('checked')) {
+                $(this).text($(this).attr('data-ifis'));
+            }
+            else {
+                $(this).text($(this).attr('data-ifnone'));
+            }
+        });
+    });
 });

@@ -163,6 +163,64 @@
             <div class="page_cloud-connect-txt">
                 The controller connects to an electric lock and the cloud server. So it opens doors, barriers, turnstiles and log all the events in real-time. The controller connects to thecloud-based server using a built-in Wi-Fi module, which avoids the need to setup a local server machine. If the keypass.cloud controller is outside the range of the Wi-Fi router, Internet access can be obtained using an Ethernet cable. In case of the internet troubles the controller keeps the data locally sending all the logs after the connection is stable again.
             </div>
+            <div class="page_cloud-connect-scheme">
+                <div class="page_cloud-connect-scheme-top">
+                    <div class="page_cloud-connect-scheme-tumb">
+                        <span class="lbl">Wi-fi</span>
+                        <input type="checkbox" class="iswifi" id="iswifi">
+                        <label for="iswifi">
+                            <span class="txt">on</span>
+                            <span class="circle"></span>
+                            <span class="txt">off</span>
+                        </label>
+                    </div>
+                    <div class="page_cloud-connect-scheme-tumb">
+                        <span class="lbl">Exit button</span>
+                        <input type="checkbox" class="isexit" id="isexit">
+                        <label for="isexit">
+                            <span class="txt">on</span>
+                            <span class="circle"></span>
+                            <span class="txt">off</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="page_cloud-connect-scheme-img">
+                    <img src="img/scheme.jpg" alt="" class="js-scheme-img" style="visibility: visible;">
+                    <img src="img/scheme2.jpg" alt="" class="js-scheme-img2" style="visibility: hidden;">
+                    <div class="page_cloud-connect-scheme-bl" style=" top: 0; left: 0;">
+                        <div class="image"><img src="img/sch1.png" alt=""></div>
+                        <div class="ttl">Door sensor</div>
+                    </div>
+                    <div class="page_cloud-connect-scheme-bl" style=" top: 0; left: 39.2%; width: 182px;">
+                        <div class="image"><img src="img/sch2.png" alt=""></div>
+                        <div class="ttl">Internet router/switch</div>
+                    </div>
+                    <div class="page_cloud-connect-scheme-bl" style=" top: 0; left: 89%;">
+                        <div class="image"><img src="img/sch3.png" alt=""></div>
+                        <div class="ttl">Fire alarm</div>
+                    </div>
+                    <div class="page_cloud-connect-scheme-bl" style=" top: 40%; left: 0%;">
+                        <div class="image"><img src="img/sch4.png" alt=""></div>
+                        <div class="ttl">DC power 12V</div>
+                    </div>
+                    <div class="page_cloud-connect-scheme-bl" style=" top: 40%; left: 39.2%; width: 182px;">
+                        <div class="image"><img src="img/sch5.png" alt=""></div>
+                        <div class="ttl js-iswifi-change" data-ifnone="Controller" data-ifis="keypass.cloud Controller">Controller</div>
+                    </div>
+                    <div class="page_cloud-connect-scheme-bl" style=" top: 79%; left: 0%;">
+                        <div class="image"><img src="img/sch6.png" alt=""></div>
+                        <div class="ttl">Reader #2</div>
+                    </div>
+                    <div class="page_cloud-connect-scheme-bl" style=" top: 79%; left: 39.2%; width: 182px;">
+                        <div class="image"><img src="img/sch7.png" alt=""></div>
+                        <div class="ttl js-iswifi-change" data-ifnone="Electromechanical lock 12V" data-ifis="Electromagnetic lock 12V">Electromechanical lock 12V</div>
+                    </div>
+                    <div class="page_cloud-connect-scheme-bl" style=" top: 79%; left: 89%;">
+                        <div class="image js-isexit-change-img" data-ifnone="img/sch6.png" data-ifis="img/sch8.png"><img src="img/sch6.png" alt=""></div>
+                        <div class="ttl js-isexit-change-txt" data-ifnone="Reader #2" data-ifis="Exit button">Reader #2</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="page_cloud-integ">
