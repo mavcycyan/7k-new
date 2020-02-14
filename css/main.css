@@ -21,6 +21,10 @@ header {
   z-index: 10;
 }
 
+.h-logo img {
+  width: 100%;
+  max-width: 181px;
+}
 .h-menu {
     padding-top: 4px;
 }
@@ -130,12 +134,12 @@ header {
   margin-bottom: 0px;
 }
 
-@media(min-width: 1199px){
+@media(min-width: 768px){
   .h-mob-menu {
     display: none;
   }
 }
-@media(max-width: 991px){
+@media(max-width: 767px){
   .h-mob-menu {
     border: 1px solid #fff;
     border-radius: 3px;
@@ -143,6 +147,7 @@ header {
     background: none;
     display: inline-block;
     margin-bottom: 30px;
+    cursor: pointer;
   }
 
   .h-mob-menu span {
@@ -175,6 +180,10 @@ header {
   }
 
   .h-menu ul li a {
+    color: rgba(39, 148, 251, 0.6);
+    font-size: 14px;
+  }
+  .h-menu ul li a:hover {
     color: #2794fb;
     font-size: 14px;
   }
@@ -186,6 +195,12 @@ header {
   .h-menu ul li {
     margin-bottom: 12px;
     text-align: center;
+  }
+  .h-btn {
+    margin: 0;
+  }
+  .h-lang {
+    padding-top: 10px;
   }
 }
 /*header*/
@@ -224,7 +239,8 @@ header {
   animation-name: clouds;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-delay: 25s;
+  /*animation-delay: 25s;*/
+  animation-direction: reverse;
 }
 .clouds-anim > *{
   position: relative;
@@ -283,6 +299,7 @@ header {
   font-size: 14px;
   margin-top: 35px;
   line-height: 28px;
+  max-width: 430px;
 }
 .keypass {
   padding-bottom: 75px;
@@ -368,6 +385,12 @@ h2{
   font-weight: 700;
   margin-top: 40px;
   box-shadow: 0px 2px 26px 0px rgba(38,85,222,0.35);
+  transition: 0.3s;
+}
+.access-button:hover {
+  background: #2980cf;
+  text-decoration: none;
+  color: #fff;
 }
 .access-button2{
   display: inline-block;
@@ -380,6 +403,12 @@ h2{
   font-weight: 700;
   margin-top: 40px;
   box-shadow: 0px 2px 26px 0px rgba(38,85,222,0.35);
+  transition: 0.3s;
+}
+.access-button2:hover {
+  background: #2980cf;
+  text-decoration: none;
+  color: #fff;
 }
 .areyou-title{
   color: #35385c;
@@ -419,6 +448,12 @@ h2{
   text-align: center;
   width: 100%;
   max-width: 216px;
+  transition: 0.3s;
+}
+.areyou-button:hover {
+  background: #2980cf;
+  text-decoration: none;
+  color: #fff;
 }
 .a-button{
   padding-bottom: 80px;
