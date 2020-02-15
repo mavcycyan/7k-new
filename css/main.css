@@ -1424,6 +1424,16 @@ span.lbl {}
   color: #35385c;
 }
 
+.page_cloud-connect-scheme-img {
+  max-width: 656px;
+}
+
+.page_cloud-connect-scheme-bl .image {
+  width: 60px;
+  height: 60px;
+  padding: 14px;
+}
+
 @media(max-width: 991px){
   .page_cloud-faq h2 {
     font-size: 24px;

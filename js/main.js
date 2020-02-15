@@ -58,6 +58,25 @@ $(document).ready(function() {
         $('.js-val-cur').text($(this).attr('data-value'));
     });
 
+    $(window).load(function(){
+        if($('.iswifi').prop('checked')) {
+            $('.js-scheme-img').css('visibility', 'hidden');
+            $('.js-scheme-img2').css('visibility', 'visible');
+        }
+        else {
+            $('.js-scheme-img').css('visibility', 'visible');
+            $('.js-scheme-img2').css('visibility', 'hidden');
+        }
+        $('.js-iswifi-change').each(function(){
+            if($('.iswifi').prop('checked')) {
+                $(this).text($(this).attr('data-ifis'));
+            }
+            else {
+                $(this).text($(this).attr('data-ifnone'));
+            }
+        });
+    });
+
     $('.iswifi').change(function(){
         if($(this).prop('checked')) {
             $('.js-scheme-img').css('visibility', 'hidden');
