@@ -115,5 +115,11 @@ $(document).ready(function() {
                 $(this).text($(this).attr('data-ifnone'));
             }
         });
+        if($('.isexit').prop('checked')) {
+            $('.js-isexit-wgnd').css('display', 'none');
+        }
+        else {
+            $('.js-isexit-wgnd').css('display', 'block');
+        }
     });
 });

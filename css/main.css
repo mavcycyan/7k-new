@@ -1490,6 +1490,12 @@ span.lbl {}
   height: 60px;
   padding: 14px;
 }
+.page_cloud-connect-scheme-wgnd {
+  position: absolute;
+  top: 62%;
+  left: 62%;
+  width: 14%;
+}
 
 @media(max-width: 991px){
   .page_cloud-faq h2 {
