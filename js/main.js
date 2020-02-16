@@ -5,8 +5,11 @@ $(document).ready(function() {
     $('.js-lang-pop a').click(function(){
         $(this).siblings('.js-lang-pop').fadeOut();
     });
-    $(window).on("load",function(){
-        $(".js-mCSB").mCustomScrollbar();
+    $(window).on("load resize",function(){
+        if($(window).width() > 768)
+            $(".js-mCSB").mCustomScrollbar();
+        else
+            $(".js-mCSB").mCustomScrollbar("destroy");
     });
 
     $(document).mouseup(function(e){
