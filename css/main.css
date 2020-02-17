@@ -1183,6 +1183,9 @@ input.error, textarea.error {
   margin-right: 12px;
   margin-top: 3px;
 }
+.page_cloud-first-row span {
+  flex: 1;
+}
 
 .page_cloud-first-btn {
   background: #279cff;
